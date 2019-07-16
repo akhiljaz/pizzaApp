@@ -1,0 +1,33 @@
+<div class="container" style="text-align: center">
+    <h1 style="color:brown">Order Pizza</h1>
+    <img style="width: 50%; height: auto;" src="../../assets/pizza4.jpg">
+    <br/>
+   
+
+<div style="text-align: center">
+  <h2 style="color:green">Size:</h2>
+  <button class="btn btn-secondary" (click)="small=1">Small</button>
+  <button class="btn btn-secondary" (click)="medium = 1">Medium</button>
+  <button class="btn btn-secondary" (click)="large = 1">Large</button>
+  <button class="btn btn-secondary" (click)="xl =1">Extra Large</button>
+  <h2 style="color:green">Topings</h2>
+  <h3>Vegitarian</h3>
+  <p>Tomato:<button (click)="tomato=tomato-1">-</button>{{tomato}}<button (click)="tomato=tomato+1">+</button></p>
+  <p>Onion:<button (click)="onion=onion-1">-</button>{{onion}}<button (click)="onion=onion+1">+</button></p>
+  <p>Bell Pepper:<button (click)="bellpeppers=bellpepper-1">-</button>{{bellpepper}}<button (click)="bellpeppers=bellpepper+1">+</button></p>
+  <p>Mashrooms:<button (click)="mashroom=mashroom-1">-</button>{{mashroom}}<button  (click)="mashroom=mashroom+1">+</button></p>
+  <p>Pineapple:<button (click)="pineapple=pineapple-1">-</button>{{pineapple}}<button (click)="pineapple=pineapple+1">+</button></p>
+  <h3>Non Vegitarian</h3>
+  <p>Sausage:<button (click)="sausage=sausage-1">-</button>{{sausage}}<button (click)="sausage=sausage+1">+</button></p>
+  <p>Pepperoni:<button (click)="pepperoni=pepperoni-1">-</button>{{pepperoni}}<button (click)="pepperoni=pepperoni+1">+</button></p>
+  <p>BBQ Chicken:<button (click)="bbqChicken=bbqChicken-1">-</button>{{bbqChicken}}<button (click)="bbqChicken=bbqChicken+1">+</button></p>
+ 
+</div>
+<div><h2>Your orders</h2>
+  <p>Small:{{small}}</p>
+  <p>medium:{{medium}}</p>
+  <p>large:{{large}}</p>
+  <p>xl:{{xl}}</p>
+  </div>
+<button class="btn btn-success" style="margin: 15px;" (click)="orderPizza()">Order Now</button>
+</div>
